@@ -1,0 +1,18 @@
+#exam-timetable-label-input input{
+    margin-right: 2px;
+    margin-top: 10px;
+    width:120px
+  }
+  #exam-timetable-label { 
+    font-variant: all-petite-caps;
+    text-align: center;
+    display: flex;
+    margin-top: 10px;
+  }
+  form label{
+    font-weight: bold;
+    font-size: 18px
+  }
+  h2{
+    font-size: 21.5px
+  }

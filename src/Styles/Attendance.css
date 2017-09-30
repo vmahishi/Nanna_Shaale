@@ -1,0 +1,17 @@
+.heading{
+    justify-content: space-around;
+    display: flex;
+    font : bold;
+}
+input[type="button"]{
+    margin: 0px 5px 10px 10px
+}
+input[type="submit"]{
+    margin: 2px 0px 10px 10px
+}
+#heading-font{
+    font-weight: bold;
+}
+#checkbox{
+        margin-left: 210px
+}

@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+img {
+  float: left;
+  max-height: 80px;
+  max-width: 180px;
+  margin: 5px 10px 0px 0px;
+}
+
+.App-header {
+  background-color:#a76060;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+.title{
+  float: left;
+  margin-top: 10px;
+}
+.btn-styling{
+  margin : 3px 2px;
+  background-color: #5ba2de;
+  border-color: #307c92;
+  border-radius: 5px;
+}
+.nav-tabs .arrange-right{
+  float: right
+}
+
+.navbar-nav{
+  margin: 40px 0px 10px -270px;
+}
+
+.navbar .navbar-default{
+margin-top: 10px;
+}
+.navbar-header{
+  margin-top: 5px;
+}
+.profile-image{
+  float: left;
+  height: 200px;
+  margin-bottom: 5px
+}
+.upload-image{
+  margin: 220px -145px
+}

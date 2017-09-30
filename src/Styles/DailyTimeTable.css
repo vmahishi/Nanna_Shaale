@@ -1,0 +1,15 @@
+
+#daily-timetable-label { 
+  font-variant: all-petite-caps;
+  text-align: center;
+  display: flex;
+  margin-top: 5px 0px 5px 0px;
+}
+#daily-timetable-label-input input{
+  margin-right: 2px;
+  width:150px;
+  margin-top: 10px
+}
+h2{
+  font-size: 21.5px
+}
