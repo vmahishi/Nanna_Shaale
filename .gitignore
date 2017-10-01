@@ -73,6 +73,7 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+*.build
 project.xcworkspace
 
 # Android/IJ

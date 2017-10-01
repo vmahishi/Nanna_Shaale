@@ -1,36 +1,41 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
 } from 'react-native';
-
+ 
+import Tabs from 'react-native-tabs';
+ 
 export default class Nanna_Shaale extends Component {
+  constructor(props){
+    super(props);
+    this.state = {page:'Home'};
+  }
   render() {
+    var self = this;
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+        <Tabs selected={this.state.page} style={{backgroundColor:'white'}}
+              selectedStyle={{color:'green'}} onSelect={el=>this.setState({page:el.props.name})}>
+            <Text name="Home" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>Home</Text>
+            <Text name="My Profile" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>My Profile</Text>
+            <Text name="TimeTable" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>TimeTable</Text>
+            <Text name="Attendance" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>Attendance</Text>
+            <Text name="Results" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>Results</Text>
+        </Tabs>
+          <Text style={styles.welcome}>
+              Welcome to React Native
+          </Text>
+          <Text style={styles.instructions}>
+              Selected page: {this.state.page}
+          </Text>
       </View>
     );
   }
 }
-
+ 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -49,5 +54,5 @@ const styles = StyleSheet.create({
     marginBottom: 5,
   },
 });
-
+ 
 AppRegistry.registerComponent('Nanna_Shaale', () => Nanna_Shaale);
