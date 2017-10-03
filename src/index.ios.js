@@ -10,6 +10,7 @@ import MyProfile from './Views/ios/MyProfile';
 import TimeTable from './Views/ios/TimeTable';
 import Attendance from './Views/ios/Attendance';
 import Results from './Views/ios/Results';
+import Icon from 'react-native-vector-icons/Ionicons';
  
 export default class Nanna_Shaale extends Component {
   constructor(props){
@@ -19,69 +20,62 @@ export default class Nanna_Shaale extends Component {
   render() {
     return (
       <TabBarIOS selectedTab={this.state.selectedTab}>
-      <TabBarIOS.Item
+      <Icon.TabBarItemIOS
       selected={this.state.selectedTab==='Home'}
-      systemIcon='featured'
+      title="Home"
+      iconName="ios-home-outline"
+      selectedIconName="ios-home"
       onPress ={() => {
         this.setState({selectedTab:'Home'});
       }}>
       <Home />
-      </TabBarIOS.Item>
+      </Icon.TabBarItemIOS>
 
-      <TabBarIOS.Item
+      <Icon.TabBarItemIOS
       selected={this.state.selectedTab==='My Profile'}
-      systemIcon='contacts'
+      title="Profile"
+      iconName="ios-person-outline"
+      selectedIconName="ios-person"
       onPress ={() => {
         this.setState({selectedTab:'My Profile'});
       }}>
       <MyProfile />
-      </TabBarIOS.Item>
+      </Icon.TabBarItemIOS>
 
-      <TabBarIOS.Item
+      <Icon.TabBarItemIOS
       selected={this.state.selectedTab==='TimeTable'}
-      systemIcon='favorites'
+      title="TimeTable"
+      iconName="ios-calendar-outline"
+      selectedIconName="ios-calendar"
       onPress ={() => {
         this.setState({selectedTab:'TimeTable'});
       }}>
       <TimeTable />
-      </TabBarIOS.Item>
+      </Icon.TabBarItemIOS>
 
-      <TabBarIOS.Item
+      <Icon.TabBarItemIOS
       selected={this.state.selectedTab==='Attendance'}
-      systemIcon='bookmarks'
+      title="Attendance"
+      iconName="ios-hand-outline"
+      selectedIconName="ios-hand"
       onPress ={() => {
         this.setState({selectedTab:'Attendance'});
       }}>
       <Attendance />
-      </TabBarIOS.Item>
+      </Icon.TabBarItemIOS>
 
-      <TabBarIOS.Item
+      <Icon.TabBarItemIOS
       selected={this.state.selectedTab==='Results'}
-      systemIcon='history'
+      title="Results"
+      iconName="ios-stats-outline"
+      selectedIconName="ios-stats"
       onPress ={() => {
         this.setState({selectedTab:'Results'});
       }}>
       <Results />
-      </TabBarIOS.Item>
+      </Icon.TabBarItemIOS>
 
       </TabBarIOS>
-
-      /* <View style={styles.container}> */
-       /* <Tabs selected={this.state.page} style={{backgroundColor:'white'}} */
-      //         selectedStyle={{color:'green'}} onSelect={el=>this.setState({page:el.props.name})}>
-      //       <Text name="Home" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}><Home /></Text>
-      //       <Text name="My Profile" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>My Profile</Text>
-      //       <Text name="TimeTable" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>TimeTable</Text>
-      //       <Text name="Attendance" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>Attendance</Text>
-      //       <Text name="Results" selectedIconStyle={{borderTopWidth:2,borderTopColor:'green'}}>Results</Text>
-      //   </Tabs>
-      //     <Text style={styles.welcome}>
-      //         Welcome to Nanna Shaale
-      //     </Text>
-      //     <Text style={styles.instructions}>
-      //         Selected page: {this.state.page}
-      //     </Text>
-      // </View>
     );
   }
 }
@@ -91,7 +85,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#AABCFF',
   },
   welcome: {
     fontSize: 20,
