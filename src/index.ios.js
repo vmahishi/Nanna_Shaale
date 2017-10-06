@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 import Tabs from 'react-native-tabs';
 import Home from './Views/ios/Home'
-import MyProfile from './Views/ios/MyProfile';
+import MyProfile from './Views/ios/ProfilePage/MyProfile';
 import TimeTable from './Views/ios/TimeTable';
 import Attendance from './Views/ios/Attendance';
 import Results from './Views/ios/Results';
