@@ -3,26 +3,26 @@ import {
   AppRegistry,
   StyleSheet,
   View,
-  Image
+  Image,
+  ImageBackground
 } from 'react-native';
+import PhotoUploader from './PhotoUploader';
 
 const styles = StyleSheet.create({
     header: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      padding: 20,
     },
     profilepicWrap:{
         width: 200,
         height: 200,
         borderRadius: 100,
-        borderWidth: 3
+        borderWidth: 2
     },
     profilepic:{
         flex: 1,
         width: null,
-        alignSelf: 'stretch',
         borderRadius: 100,
     }
   });
@@ -31,10 +31,11 @@ const styles = StyleSheet.create({
       render(){
           return(   
             <View style={styles.header}>
-                <View style={styles.profilepicWrap}>
+                <ImageBackground style={styles.profilepicWrap}>
                     <Image style={styles.profilepic} source={require('../../../Images/placeholder.png')} >  
+                    <PhotoUploader />
                     </Image>
-                </View>
+                </ImageBackground>
             </View>
           );
       }
