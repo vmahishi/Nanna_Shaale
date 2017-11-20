@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import FileInput from 'react-simple-file-input';
 import XLSX from 'xlsx';
 import ReactFileReader from 'react-file-reader';
  

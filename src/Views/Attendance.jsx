@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
-import Checkbox from 'react-checkbox';
 import Login from './Login';
 import FileImport from './FileImport'
 import '../Styles/Attendance.css'
-import JsonTable from 'react-json-table';
 
 class Attendance extends Component{
     render(){
