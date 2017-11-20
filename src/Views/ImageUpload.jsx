@@ -1,7 +1,7 @@
 import React ,{Component}from 'react';
 import '../Styles/ProfilePage.css';
-
 import Dropzone from 'react-dropzone';
+
 class ImageUpload extends Component {
 render() {
     return (

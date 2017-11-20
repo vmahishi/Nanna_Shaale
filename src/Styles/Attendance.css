@@ -15,3 +15,7 @@ input[type="submit"]{
 #checkbox{
         margin-left: 210px
 }
+.file-display-area{
+    height: 300px;
+    width: 350px
+}
