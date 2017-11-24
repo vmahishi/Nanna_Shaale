@@ -7,28 +7,17 @@ import '../Styles/ExamTimeTable.css';
           this.createCells = this.createCells.bind(this);
       }
 
-      createCells(){  
-        return(
-        <div id="exam-timetable-label-input">
-            <input type="Date" placeholder="Date" />
-            <input type="text" placeholder="Subject"/>
-          
-            <input type="Date" placeholder="Date"/>
-            <input type="text" placeholder="Subject"/>
-           
-            <input type="Date" placeholder="Date"/>
-            <input type="text" placeholder="Subject"/>
-           
-            <input type="Date" placeholder="Date"/>
-            <input type="text" placeholder="Subject"/>
-           
-            <input type="Date" placeholder="Date"/>
-            <input type="text" placeholder="Subject"/>
- 
-            <input type="Date" placeholder="Date"/>
-            <input type="text" placeholder="Subject"/>
-        </div>
-        );
+    createCells(){
+        let inputFields = [];
+        for(var i =0; i< 5; i++){
+            inputFields.push(
+                <div id="exam-timetable-label-input">
+                <input type="Date" placeholder="Date" />
+                <input type="text" placeholder="Subject"/>
+                </div>
+            )
+        }
+        return inputFields;
     }
 
       render(){

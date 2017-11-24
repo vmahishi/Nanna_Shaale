@@ -19,25 +19,27 @@ class FileImport extends Component {
     // this.state = {};
     this.state = {value: [], count: 1};
     this.handleSubmit = this.handleSubmit.bind(this);
+    this.createCheckbox = this.createCheckbox.bind(this);
   }
   
   render(){
     return(
       <div>
-      <ReactFileReader handleFiles={this.handleFiles}>
+      <ReactFileReader fileTypes={[".csv", ".xls", ".xlsx"]} handleFiles={this.handleFiles}>
         <button className='btn'>Upload</button>
-        <table>
+      </ReactFileReader>
+      <table>
           <tbody>
             { this.state.studentList && this.state.studentList.map(student => 
               <tr>
                 <td>{student.Roll_Number}</td>
                 <td>{student.Name}</td>
                 <td>{student.Attendance}</td>
+                <td>{this.createCheckbox()}</td>
               </tr>
           )}
           </tbody>
         </table>
-      </ReactFileReader>
 
       <form onSubmit={this.handleSubmit}>
                      {this.createUI()}         
@@ -47,6 +49,14 @@ class FileImport extends Component {
       </div>
     );
   }
+
+  createCheckbox(){
+    return(
+                <div>
+                  <input id="checkbox" type="checkbox" />
+              </div>
+    )
+ }
 
   createUI(){
     let uiItems = [];
