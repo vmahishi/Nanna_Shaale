@@ -7,19 +7,16 @@ import '../Styles/DailyTimeTable.css';
           this.createCells = this.createCells.bind(this);
       }
 
-      createCells(){  
-        return(
-        <div id="daily-timetable-label-input">
-            <input type='text' />
-            <input type='text' />
-            <input type='text' />
-            <input type='text' />
-            <input type='text' />
-            <input type='text' />
-            <input type='text' />
-            <input type='text' />
-        </div>
-        );
+      createCells(type){  
+          let inputFields = [];
+            for (var i = 0; i < 8; i++){
+                inputFields.push(
+                    <div key={i}>
+                    <input type={type} />
+                    </div>
+                );
+            }
+            return inputFields;
     }
 
       render(){
@@ -28,27 +25,39 @@ import '../Styles/DailyTimeTable.css';
             <form id="daily-timetable-label">
                 <label>
                      MONDAY
-                    {this.createCells()}
+                     <div id="daily-timetable-label-input">
+                    {this.createCells('text')}
+                    </div>
                 </label>
                 <label> 
                     TUESDAY
-                    {this.createCells()}
+                    <div id="daily-timetable-label-input">
+                    {this.createCells('text')}
+                    </div>
                 </label>
                 <label>
                     WEDNESDAY
-                    {this.createCells()}
+                    <div id="daily-timetable-label-input">
+                    {this.createCells('text')}
+                    </div>
                 </label>
                 <label>
                     THURSDAY
-                    {this.createCells()}
+                    <div id="daily-timetable-label-input">
+                    {this.createCells('text')}
+                    </div>
                 </label>
                 <label>
                     FRIDAY
-                    {this.createCells()}
+                    <div id="daily-timetable-label-input">
+                    {this.createCells('text')}
+                    </div>
                 </label>
                 <label>
                     SATURDAY
-                    {this.createCells()}
+                    <div id="daily-timetable-label-input">
+                    {this.createCells('text')}
+                    </div>
                 </label>
             </form> 
         <button className="button">Save</button>
