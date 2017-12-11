@@ -14,7 +14,7 @@ class Login extends Component{
             
                 <ul className="nav nav-tabs">
                     <li>
-                        <Link to="/home">Home</Link>
+                        <Link to="/schoolhome">Home</Link>
                     </li>
                     <li>
                         <Link to="/profile">My Profile</Link>

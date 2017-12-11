@@ -22,7 +22,7 @@
 #student-name-label{ 
   margin: 0 20px 0 0;
 }
-img {
+div > .profile-image {
   float: left;
   max-height: 150px;
   max-width: 180px;

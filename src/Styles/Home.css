@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+}
+.brand-logo{
+    max-height: 50px;
+    max-width: 160px;
+    float: left;
+}
+.welcome{
+    text-align: center;
+  }
+#form > .search-field{
+    text-align: center;
+}

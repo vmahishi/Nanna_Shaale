@@ -3,10 +3,7 @@
 }
 
 img {
-  float: left;
-  max-height: 80px;
-  max-width: 180px;
-  margin: 5px 10px 0px 0px;
+  max-height: 150px;
 }
 
 .App-header {

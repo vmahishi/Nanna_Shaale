@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Callback from './Components/Callback';
-import Login from './Views/Login';
 import Home from './Views/Home';
+import Login from './Views/Login';
+import Schools from './Views/Schools';
+import AboutUs from './Views/AboutUs';
+import SchoolHome from './Views/SchoolHome';
 import Myprofile from './Views/Myprofile';
 import Results from './Views/Results';
 import Timetable from './Views/Timetable';
@@ -15,9 +18,13 @@ const Root = () => {
   return (
     <div className="container">
     <Router history={browserHistory} >
-            <Route path="/" component={Login} />
-            <Route path="/callback" component={Myprofile} />
+            {/* <Route path="/" component={Login} /> */}
+            <Route path="/" component={Home} />
             <Route path="/home" component={Home} />
+            <Route path="/schools" component={Schools} />
+            <Route path="/aboutus" component={AboutUs} />
+            <Route path="/callback" component={Myprofile} />
+            <Route path="/schoolhome" component={SchoolHome} />
             <Route path="/profile" component={Myprofile} />
             <Route path="/results" component={Results} />
             <Route path="/timetable" component={Timetable} />
